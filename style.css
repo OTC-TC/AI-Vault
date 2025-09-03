@@ -20,6 +20,14 @@ html {
    justify-content: space-between;
    align-items: center;
    font-size: 30px;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   background-image: linear-gradient(135deg,#4e54c8,#8f94fb);
+   padding: 0px 0;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(10px);
+   transition: all 0.3s ease;
 }
 
 .nav h1{
@@ -32,6 +40,13 @@ html {
     color: white;
     text-decoration: none;
     padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
 }
 
 /*Nav Bar Ends*/
@@ -64,6 +79,12 @@ html {
     width: 15vw;
     cursor: pointer;
     border: none;
+}
+
+.main a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
 }
 
 .show{
@@ -228,7 +249,50 @@ html {
 
 
 
+#contact{
+    width: 100%;
+    background-color: #1A1A1A;
+    height: auto;
+    padding: 40px 20px;
+}
 
+#contact h1{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+#about{
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about h1{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+#about p{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 
 
@@ -266,10 +330,11 @@ ul{
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 80%;
     padding: 20px;
     color: white;
     border-radius: 20px;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
 #mcontent #close {
@@ -311,6 +376,9 @@ ul{
         font-size: 24px;
         flex-wrap: wrap;
         padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     .links a {
@@ -363,12 +431,16 @@ ul{
     }
 
     #mcontent {
-        width: 85%;
+        width: 100%;
+        margin: 8px;
+        box-sizing: border-box;
     }
 
     #vm {
         width: 20vw;
     }
+    
+   
 }
 
 @media (max-width: 768px) {
@@ -378,6 +450,11 @@ ul{
         align-items: flex-start;
         gap: 8px;
         padding: 10px 16px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-image: linear-gradient(135deg,#4e54c8,#8f94fb);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     .nav h1 {
@@ -494,6 +571,8 @@ ul{
     #mcontent {
         width: 100%;
         padding: 16px 12px;
+        margin: 8px;
+        box-sizing: border-box;
     }
 
     #vm {
@@ -504,6 +583,8 @@ ul{
 }
 
 @media (max-width: 400px) {
+
+
     .main h1 {
         font-size: 28px;
     }
@@ -525,10 +606,12 @@ ul{
     }
     
     #mcontent {
-        width: 95%;
-        padding: 12px 8px;
-        margin: 10px;
-        border-radius: 15px;
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+        height: 200vh;
+        border-radius: 0;
+        box-sizing: border-box;
     }
     
     #modalpic {
@@ -565,13 +648,18 @@ ul{
     }
 }
 
+footer{
+    width: 80%;
+}
+
 /* Extra small mobile devices */
 @media (max-width: 320px) {
     #mcontent {
-        width: 98%;
+        width: 100%;
         padding: 8px 6px;
-        margin: 5px;
+        margin: 4px;
         border-radius: 12px;
+        box-sizing: border-box;
     }
     
     #modalpic {
@@ -605,5 +693,25 @@ ul{
         top: 6px;
         right: 10px;
         font-size: 18px;
+    }
+}
+
+/* Ensure modal takes full width on all mobile devices */
+@media (max-width: 768px) {
+    #modal {
+        padding: 0;
+    }
+    
+    #mcontent {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 16px 12px;
+        border-radius: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

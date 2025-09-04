@@ -51,7 +51,7 @@ html {
 
 /*Nav Bar Ends*/
 
-.main{
+#main{
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -59,17 +59,17 @@ html {
    justify-content: center;
 }
 
-.main h1{
+#main h1{
     color: white;
     font-size: 60px;
 }
 
-.main h2{
+#main h2{
     color: white;
     font-size: 30px;
 }
 
-.main button{
+#main button{
     font-size: 30px;
     margin: 50px;
     color: white;
@@ -81,7 +81,7 @@ html {
     border: none;
 }
 
-.main a{
+#main a{
     font-size: 30px;
     color: white;
     text-decoration: none;
@@ -249,50 +249,7 @@ html {
 
 
 
-#contact{
-    width: 100%;
-    background-color: #1A1A1A;
-    height: auto;
-    padding: 40px 20px;
-}
 
-#contact h1{
-    color: white;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 0 0 20px 0;
-}
-
-#about{
-    width: 100%;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#about h1{
-    color: white;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 0 0 20px 0;
-}
-
-#about p{
-    color: white;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 
 
@@ -367,6 +324,36 @@ ul{
 }
 
 
+
+
+
+
+
+
+#about h1,p{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+#contact h1,h2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+#contact{
+    background-color: #2f1d1d;
+    width: 99vw;
+    height: auto;
+    
+}
 
 
 
@@ -473,17 +460,17 @@ ul{
         font-size: 16px;
     }
 
-    .main h1 {
+    #main h1 {
         font-size: 36px;
         padding: 0 12px;
     }
 
-    .main h2 {
+    #main h2 {
         font-size: 18px;
         padding: 0 12px;
     }
 
-    .main button {
+    #main button {
         width: 70vw;
         height: 52px;
         font-size: 20px;
@@ -586,11 +573,11 @@ ul{
 @media (max-width: 400px) {
 
 
-    .main h1 {
+    #main h1 {
         font-size: 28px;
     }
 
-    .main h2 {
+    #main h2 {
         font-size: 16px;
     }
 
@@ -650,8 +637,8 @@ ul{
     }
 }
 
-footer{
-    width: 80%;
+#about,#contact{
+    width: 90%;
 }
 
 /* Extra small mobile devices */
@@ -664,6 +651,10 @@ footer{
         box-sizing: border-box;
         height:80%;
     }
+    
+#about,#contact{
+    width: 90%;
+}
     
     #modalpic {
         width: 70%;
@@ -704,7 +695,12 @@ footer{
     #modal {
         padding: 0;
     }
+ 
     
+#about,#contact{
+    width: 90%;
+}
+
     #mcontent {
         width: 100%;
         max-width: 100%;

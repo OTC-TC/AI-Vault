@@ -228,6 +228,7 @@ html {
 #tools h2{
     font-size: 30px;
     font-weight: 200;
+    color: #000000;
 }
 
 #tools button{
@@ -366,6 +367,7 @@ ul{
     height: auto;
     
 }
+
 
 
 
@@ -559,6 +561,7 @@ ul{
 
     #tools h2 {
         font-size: 18px;
+        color: black;
     }
 
     #tools button {
@@ -580,9 +583,19 @@ ul{
         height: 44px;
         font-size: 18px;
     }
+
+    #about p , #contact h2 {
+        font-size: 18px;
+        color: white;
+    }
 }
 
 @media (max-width: 400px) {
+
+    #about p , #contact h2 {
+        font-size: 16px;
+        color: white;
+    }
 
 
     #main h1 {
@@ -603,6 +616,7 @@ ul{
 
     #tools h2 {
         font-size: 16px;
+        color: black;
     }
     
     #mcontent {
@@ -663,7 +677,11 @@ ul{
         box-sizing: border-box;
         height:80%;
     }
-    
+    #about p , #contact h2 {
+        font-size: 16px;
+        color: white;
+    }
+
 #about,#contact{
     width: 90%;
 }
@@ -709,6 +727,11 @@ ul{
     }
  
     
+    #about p , #contact h2 {
+        font-size: 14px;
+        color: white;
+    }
+
 #about,#contact{
     width: 90%;
 }

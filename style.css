@@ -638,7 +638,7 @@ ul{
     
     .tabs button {
         font-size: 16px;
-        padding: 6px 10px;
+        padding: 6px 6px;
         width: 20vw;
     }
     
@@ -707,7 +707,7 @@ ul{
         padding: 6px 10px;
         width: 20vw;
     }
-    
+
     #about p , #contact h2 {
         font-size: 16px;
         color: white;

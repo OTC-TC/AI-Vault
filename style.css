@@ -181,7 +181,9 @@ html {
     height: 60px;
     margin: 10px;
     cursor: pointer;
-    width: 20vw;
+    width: calc(100% / 7 - 20px);
+    min-width: 0;
+    flex: 1;
     border-radius: 20px;
 
 }
@@ -542,8 +544,10 @@ ul{
 
     .tabs button {
         font-size: 16px;
-        padding: 6px 10px;
-        width: 20vw;
+        padding: 6px 8px;
+        width: calc(100% / 7 - 8px);
+        min-width: 0;
+        flex: 1;
     }
 
     #tooltext {
@@ -639,7 +643,9 @@ ul{
     .tabs button {
         font-size: 16px;
         padding: 6px 6px;
-        width: 20vw;
+        width: calc(100% / 7 - 6px);
+        min-width: 0;
+        flex: 1;
     }
     
     #mcontent {
@@ -704,8 +710,10 @@ ul{
     
     .tabs button {
         font-size: 16px;
-        padding: 6px 10px;
-        width: 20vw;
+        padding: 6px 8px;
+        width: calc(100% / 7 - 8px);
+        min-width: 0;
+        flex: 1;
     }
 
     #about p , #contact h2 {

@@ -443,6 +443,8 @@ let ig = document.getElementById("ig");
 let vg = document.getElementById("vg");
 let cd = document.getElementById("cd");
 let pd = document.getElementById("pd");
+let free = document.getElementById("free");
+let paid = document.getElementById("paid");
 
 cb.addEventListener("click",()=>{
     chatgpt.style.display = "block";
@@ -463,6 +465,8 @@ cb.addEventListener("click",()=>{
     vg.style.border = "none";
     cd.style.border = "none";
     pd.style.border = "none";
+    free.style.border = "none";
+    paid.style.border = "none";
 })
 ig.addEventListener("click",()=>{
     chatgpt.style.display = "none";
@@ -483,6 +487,8 @@ ig.addEventListener("click",()=>{
     vg.style.border = "none";
     cd.style.border = "none";
     pd.style.border = "none";
+    free.style.border = "none";
+    paid.style.border = "none";
 })
 vg.addEventListener("click",()=>{
     chatgpt.style.display = "none";
@@ -503,6 +509,8 @@ vg.addEventListener("click",()=>{
     cb.style.border = "none";
     cd.style.border = "none";
     pd.style.border = "none";
+    free.style.border = "none";
+    paid.style.border = "none";
 })
 cd.addEventListener("click",()=>{
     chatgpt.style.display = "none";
@@ -523,6 +531,8 @@ cd.addEventListener("click",()=>{
     vg.style.border = "none";
     cb.style.border = "none";
     pd.style.border = "none";
+    free.style.border = "none";
+    paid.style.border = "none";
 })
 pd.addEventListener("click",()=>{
     chatgpt.style.display = "none";
@@ -543,5 +553,53 @@ pd.addEventListener("click",()=>{
     vg.style.border = "none";
     cd.style.border = "none";
     cb.style.border = "none";
+    free.style.border = "none";
+    paid.style.border = "none";
 })
 
+free.addEventListener("click",()=>{
+    chatgpt.style.display = "block";
+    claude.style.display = "block";
+    perplexity.style.display = "block";
+    gemini.style.display = "block";
+    midjourney.style.display = "none";
+    stable.style.display = "block";
+    dalle.style.display = "block";
+    canva.style.display = "block";
+    cursor.style.display = "block";
+    runway.style.display = "none";
+    github.style.display = "none";
+    grammarly.style.display = "block";
+    Array.from(heading).forEach(h => h.style.display = "none");
+    pd.style.border = "none";
+    ig.style.border = "none";
+    vg.style.border = "none";
+    cd.style.border = "none";
+    cb.style.border = "none";
+    free.style.border = "2px solid gold";
+    paid.style.border = "none";
+})
+
+
+paid.addEventListener("click",()=>{
+    chatgpt.style.display = "none";
+    claude.style.display = "none";
+    perplexity.style.display = "none";
+    gemini.style.display = "none";
+    midjourney.style.display = "block";
+    stable.style.display = "none";
+    dalle.style.display = "none";
+    canva.style.display = "none";
+    cursor.style.display = "none";
+    runway.style.display = "block";
+    github.style.display = "block";
+    grammarly.style.display = "none";
+    Array.from(heading).forEach(h => h.style.display = "none");
+    pd.style.border = "none";
+    ig.style.border = "none";
+    vg.style.border = "none";
+    cd.style.border = "none";
+    cb.style.border = "none";
+    free.style.border = "none";
+    paid.style.border = "2px solid gold";
+})

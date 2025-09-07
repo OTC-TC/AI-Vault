@@ -543,6 +543,7 @@ ul{
     .tabs button {
         font-size: 16px;
         padding: 6px 10px;
+        width: 20vw;
     }
 
     #tooltext {

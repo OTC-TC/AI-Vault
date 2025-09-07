@@ -168,24 +168,31 @@ html {
 
 
 .tabs{
-    height: 10vh;
+    height: auto;
+    min-height: 10vh;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+    padding: 10px;
 }
 
 
 .tabs button{
     font-size: 25px;
     height: 60px;
-    margin: 10px;
+    margin: 0;
     cursor: pointer;
-    width: calc(100% / 7 - 20px);
-    min-width: 0;
+    min-width: 120px;
     flex: 1;
+    max-width: 200px;
     border-radius: 20px;
-
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 12px;
 }
 
 
@@ -538,16 +545,19 @@ ul{
     .tabs {
         flex-wrap: wrap;
         padding: 8px 12px;
-        gap: 8px;
+        gap: 6px;
         height: auto;
     }
 
     .tabs button {
         font-size: 16px;
-        padding: 6px 8px;
-        width: calc(100% / 7 - 8px);
-        min-width: 0;
+        padding: 8px 10px;
+        min-width: 100px;
+        max-width: 150px;
         flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     #tooltext {
@@ -642,10 +652,13 @@ ul{
     
     .tabs button {
         font-size: 16px;
-        padding: 6px 6px;
-        width: calc(100% / 7 - 6px);
-        min-width: 0;
+        padding: 8px 8px;
+        min-width: 90px;
+        max-width: 130px;
         flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     #mcontent {
@@ -710,10 +723,13 @@ ul{
     
     .tabs button {
         font-size: 16px;
-        padding: 6px 8px;
-        width: calc(100% / 7 - 8px);
-        min-width: 0;
+        padding: 8px 8px;
+        min-width: 80px;
+        max-width: 120px;
         flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     #about p , #contact h2 {

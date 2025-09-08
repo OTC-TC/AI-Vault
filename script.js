@@ -435,7 +435,9 @@ reset.addEventListener("click",()=>{
     vg.style.border = "none";
     cd.style.border = "none";
     pd.style.border = "none";
-})
+    free.style.border = "none"
+    paid.style.border = "none";
+});
 
 
 let cb = document.getElementById("cb");
@@ -445,6 +447,10 @@ let cd = document.getElementById("cd");
 let pd = document.getElementById("pd");
 let free = document.getElementById("free");
 let paid = document.getElementById("paid");
+let head1 = document.getElementById("head1");
+let head2 = document.getElementById("head2");
+let head3 = document.getElementById("head3");
+
 
 cb.addEventListener("click",()=>{
     chatgpt.style.display = "block";
@@ -570,7 +576,9 @@ free.addEventListener("click",()=>{
     runway.style.display = "none";
     github.style.display = "none";
     grammarly.style.display = "block";
-    Array.from(heading).forEach(h => h.style.display = "none");
+    head1.style.display = "block";
+    head2.style.display = "block";
+    head3.style.display = "block";
     pd.style.border = "none";
     ig.style.border = "none";
     vg.style.border = "none";
@@ -594,7 +602,7 @@ paid.addEventListener("click",()=>{
     runway.style.display = "block";
     github.style.display = "block";
     grammarly.style.display = "none";
-    Array.from(heading).forEach(h => h.style.display = "none");
+    head1.style.display = "none";
     pd.style.border = "none";
     ig.style.border = "none";
     vg.style.border = "none";

@@ -236,7 +236,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "none";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "block";
+        head2.style.display = "none";
+        head3.style.display = "none";
     } else if (search.value === "Claude AI"){
         console.log("009");
         chatgpt.style.display = "none";
@@ -251,7 +253,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "none";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "block";
+        head2.style.display = "none";
+        head3.style.display = "none";
     }  else if(search.value === "Perplexity"){
         console.log("009");
         chatgpt.style.display = "none";
@@ -265,8 +269,10 @@ seabtn.addEventListener("click",()=>{
         cursor.style.display = "none";
         runway.style.display = "none";
         github.style.display = "none";
-        grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        grammarly.style.display = "none"; 
+         head1.style.display = "block";
+        head2.style.display = "none";
+        head3.style.display = "none";
     }  else if(search.value === "Gemini"){
         console.log("009");
         chatgpt.style.display = "none";
@@ -281,7 +287,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "none";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "block";
+        head2.style.display = "none";
+        head3.style.display = "none";
     }   else if(search.value === "MidJourney"){
         console.log("009");
         chatgpt.style.display = "none";
@@ -296,7 +304,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "none";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "none";
+        head2.style.display = "block";
+        head3.style.display = "none";
     }
     else if(search.value === "Stable Diffusion"){
         console.log("009");
@@ -312,7 +322,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "none";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "none";
+        head2.style.display = "block";
+        head3.style.display = "none";
     }  
     else if(search.value === "DALL.E 3"){
         console.log("009");
@@ -328,7 +340,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "none";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "none";
+        head2.style.display = "block";
+        head3.style.display = "none";
     }  
     else if(search.value === "Canva AI"){
         console.log("009");
@@ -344,7 +358,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "none";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "none";
+        head2.style.display = "block";
+        head3.style.display = "none";
     }  
     else if(search.value === "Cursor"){
         console.log("009");
@@ -360,7 +376,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "none";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "none";
+        head2.style.display = "none";
+        head3.style.display = "block";
     }
     else if(search.value === "Runway"){
         console.log("009");
@@ -376,7 +394,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "block";
         github.style.display = "none";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "none";
+        head2.style.display = "none";
+        head3.style.display = "block";
     }    
     else if(search.value === "Github Copilot"){
         console.log("009");
@@ -392,7 +412,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "block";
         grammarly.style.display = "none";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "none";
+        head2.style.display = "none";
+        head3.style.display = "block";
     }  
     else if(search.value === "Grammarly AI"){
         console.log("009");
@@ -408,7 +430,9 @@ seabtn.addEventListener("click",()=>{
         runway.style.display = "none";
         github.style.display = "none";
         grammarly.style.display = "block";
-        Array.from(heading).forEach(h => h.style.display = "none");
+        head1.style.display = "none";
+        head2.style.display = "none";
+        head3.style.display = "block";
     } 
     else{
         alert("No Results Found");
@@ -465,7 +489,9 @@ cb.addEventListener("click",()=>{
     runway.style.display = "none";
     github.style.display = "none";
     grammarly.style.display = "none";
-    Array.from(heading).forEach(h => h.style.display = "none");
+    head1.style.display = "block";
+    head2.style.display = "none";
+    head3.style.display = "none";
     cb.style.border = "2px solid gold";
     ig.style.border = "none";
     vg.style.border = "none";
@@ -473,6 +499,7 @@ cb.addEventListener("click",()=>{
     pd.style.border = "none";
     free.style.border = "none";
     paid.style.border = "none";
+
 })
 ig.addEventListener("click",()=>{
     chatgpt.style.display = "none";
@@ -487,7 +514,9 @@ ig.addEventListener("click",()=>{
     runway.style.display = "none";
     github.style.display = "none";
     grammarly.style.display = "none";
-    Array.from(heading).forEach(h => h.style.display = "none");
+    head1.style.display = "none";
+    head2.style.display = "block";
+    head3.style.display = "none";
     ig.style.border = "2px solid gold";
     cb.style.border = "none";
     vg.style.border = "none";
@@ -509,7 +538,9 @@ vg.addEventListener("click",()=>{
     runway.style.display = "block";
     github.style.display = "none";
     grammarly.style.display = "none";
-    Array.from(heading).forEach(h => h.style.display = "none");
+    head1.style.display = "none";
+    head2.style.display = "none";
+    head3.style.display = "block";
     vg.style.border = "2px solid gold";
     ig.style.border = "none";
     cb.style.border = "none";
@@ -531,7 +562,9 @@ cd.addEventListener("click",()=>{
     runway.style.display = "none";
     github.style.display = "block";
     grammarly.style.display = "none";
-    Array.from(heading).forEach(h => h.style.display = "none");
+    head1.style.display = "none";
+        head2.style.display = "none";
+        head3.style.display = "block";
     cd.style.border = "2px solid gold";
     ig.style.border = "none";
     vg.style.border = "none";
@@ -553,7 +586,9 @@ pd.addEventListener("click",()=>{
     runway.style.display = "none";
     github.style.display = "none";
     grammarly.style.display = "block";
-    Array.from(heading).forEach(h => h.style.display = "none");
+    head1.style.display = "none";
+        head2.style.display = "none";
+        head3.style.display = "block";
     pd.style.border = "2px solid gold";
     ig.style.border = "none";
     vg.style.border = "none";
@@ -603,6 +638,8 @@ paid.addEventListener("click",()=>{
     github.style.display = "block";
     grammarly.style.display = "none";
     head1.style.display = "none";
+    head2.style.display = "block";
+    head3.style.display = "block";
     pd.style.border = "none";
     ig.style.border = "none";
     vg.style.border = "none";

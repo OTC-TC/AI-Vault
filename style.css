@@ -396,6 +396,77 @@ ul{
 
 
 
+/*Compare Tools*/
+
+
+.comparison{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+.comparison h1{
+     color: white;
+     font-size: 40px;
+ }
+
+ select{
+    font-size: 20px;
+ }
+
+ .comparison button{
+    margin: 30px;
+    font-size: 30px;
+    cursor: pointer;
+ }
+
+ .comp{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+
+ #com1,#com2{
+    margin: 50px;
+    width: 30vw;
+    height: 70vh;
+    background-color: #2f1d1d;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    display: none;
+ }
+
+
+ #com1 img,#com2 img{
+    width: 10vw;
+    height: auto;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px;
+ }
+
+ #com1 p, #com2 p{
+    color: white;
+    font-size: 20px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive adjustments */
 @media (max-width: 1200px) {
     .nav {
@@ -628,6 +699,24 @@ ul{
         font-size: 16px;
         color: white;
     }
+
+
+
+    #com1,#com2{
+        margin: 20px;
+        width: 40vw;
+        height: 70vh;
+        background-color: #2f1d1d;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        display: none;
+     }
+
+
+
+
+
 
 
     #main h1 {

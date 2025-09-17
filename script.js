@@ -648,3 +648,356 @@ paid.addEventListener("click",()=>{
     free.style.border = "none";
     paid.style.border = "2px solid gold";
 })
+
+
+let AI = {
+    "chatgpt":{
+        pic:"chatgpt-6.svg",
+        namey:"ChatGPT",
+        publisher:"Open AI",
+        work:"Chat Bot",
+        platforms:"Web, Desktop, Mobile, API",
+        price:"Free, ChatGPT Plus ($20/mo)",
+    },
+    "claude":{
+        pic:"icons8-claude-ai-240.png",
+        namey:"Claude",
+        publisher:"Anthropic",
+        work:"Chat Bot",
+        platforms:"Web, Desktop, Mobile, API",
+        price:"Free & Pro plans",
+    },
+     "perplexity":{
+        pic:"icons8-perplexity-ai-144.png",
+        namey:"Perplexity AI",
+        publisher:"Perplexity AI, Inc.",
+        work:"Chat Bot",
+        platforms:"Web, Desktop, Mobile, API",
+        price:"Free & Pro ($20/mo)",
+    },
+    "gemini":{
+        pic:"icons8-gemini-ai-144.png",
+        namey:"Gemini",
+        publisher:"META",
+        work:"Chat Bot",
+        platforms:"Web, Desktop, Mobile, API",
+        price:"Free & Pro (via Google One AI Premium $20/mo)",
+    },
+    "midjourney":{
+        pic:"icons8-midjourney-480.png",
+        namey:"Mid journey",
+        publisher:"Midjourney, Inc.",
+        work:"Image Genarators",
+        platforms:"Web , Dekstop",
+        price:"Paid plans only (from $10/mo)",
+    },
+    "stable diffusion":{
+        pic:"stabled.jpg",
+        namey:"Stable Diffusion",
+        publisher:"Stability AI",
+        work:"Image Genarators",
+        platforms:"Web , Dekstop",
+        price:"Free (open-source), third-party UIs may charge",
+    },
+    "DALL·E 3":{
+        pic:"dalle.webp",
+        namey:"DALL·E 3",
+        publisher:"Open AI",
+        work:"Image Genarators",
+        platforms:"Web , Dekstop",
+        price:"Free (limited), Paid via ChatGPT Plus",
+    },
+    "canva ai":{
+        pic:"icons8-canva-144.png",
+        namey:"Canva AI",
+        publisher:"Canva Pty Ltd",
+        work:"Image Genarators",
+        platforms:"Web , Dekstop , Mobile",
+        price:"Free & Pro plans",
+    },
+    "cursor ai":{
+        pic:"icons8-cursor-ai-144.png",
+        namey:"Cursor AI",
+        publisher:"Anysphere",
+        work:"AI Code Editor",
+        platforms:"Dekstop",
+        price:"Free & Pro plans",
+    },
+    "runway ai":{
+        pic:"icons8-runway-500.png",
+        namey:"Runway AI",
+        publisher:"none",
+        work:"Video Genarator",
+        platforms:"Dekstop",
+        price:"Free trial & Paid plans",
+    },
+     "github copilot":{
+        pic:"icons8-github-copilot-144.png",
+        namey:"Github Copilot",
+        publisher:"Microsoft",
+        work:"AI Code Assistant",
+        platforms:"Dekstop",
+        price:"$10/mo (students free)",
+    },
+    "grammarly ai":{
+        pic:"grammarly-1.svg",
+        namey:"Grammarly AI",
+        publisher:" Grammarly, Inc",
+        work:"AI Writing Tool",
+        platforms:"Dekstop , Mobile",
+        price:"Free & Premium plans",
+    },
+
+}
+
+
+
+
+
+let option1 = document.getElementById("option1");
+let option2 = document.getElementById("option2");
+let sub = document.getElementById("sub");
+let pic1 = document.getElementById("pic1");
+let name1 = document.getElementById("name1");
+let parent1 = document.getElementById("parent1");
+let work1 = document.getElementById("work1");
+let platforms1 = document.getElementById("platforms1");
+let price1 = document.getElementById("price1");
+
+
+
+let pic2 = document.getElementById("pic2");
+let name2 = document.getElementById("name2");
+let parent2 = document.getElementById("parent2");
+let work2 = document.getElementById("work2");
+let platforms2 = document.getElementById("platforms2");
+let price2 = document.getElementById("price2");
+
+
+
+let com1 = document.getElementById("com1");
+let com2 = document.getElementById("com2");
+
+
+sub.addEventListener("click",()=>{
+
+    com1.style.display = "flex";
+    com2.style.display = "flex";
+
+
+    if (option1.value === "Chatgpt") { 
+        pic1.src = AI["chatgpt"].pic;
+        name1.innerHTML ="Name: "+AI["chatgpt"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["chatgpt"].publisher;
+        work1.innerHTML = "Type: "+AI["chatgpt"].work;
+        platforms1.innerHTML = "Platforms: "+AI["chatgpt"].platforms;
+        price1.innerHTML = "Price: "+AI["chatgpt"].price;
+    } 
+     else  if (option1.value === "Claude") { 
+        pic1.src = AI["claude"].pic;
+        name1.innerHTML ="Name: "+AI["claude"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["claude"].publisher;
+        work1.innerHTML = "Type: "+AI["claude"].work;
+        platforms1.innerHTML = "Platforms: "+AI["claude"].platforms;
+        price1.innerHTML = "Price: "+AI["claude"].price;
+    }
+    else  if (option1.value === "Perplexity") { 
+        pic1.src = AI["perplexity"].pic;
+        name1.innerHTML ="Name: "+AI["perplexity"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["perplexity"].publisher;
+        work1.innerHTML = "Type: "+AI["perplexity"].work;
+        platforms1.innerHTML = "Platforms: "+AI["perplexity"].platforms;
+        price1.innerHTML = "Price: "+AI["perplexity"].price;
+    }
+    else  if (option1.value === "Gemini") { 
+        pic1.src = AI["gemini"].pic;
+        name1.innerHTML ="Name: "+AI["gemini"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["gemini"].publisher;
+        work1.innerHTML = "Type: "+AI["gemini"].work;
+        platforms1.innerHTML = "Platforms: "+AI["gemini"].platforms;
+        price1.innerHTML = "Price: "+AI["gemini"].price;
+    }
+    else  if (option1.value === "Mid Journey") { 
+        pic1.src = AI["midjourney"].pic;
+        name1.innerHTML ="Name: "+AI["midjourney"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["midjourney"].publisher;
+        work1.innerHTML = "Type: "+AI["midjourney"].work;
+        platforms1.innerHTML = "Platforms: "+AI["midjourney"].platforms;
+        price1.innerHTML = "Price: "+AI["midjourney"].price;
+    }
+    else  if (option1.value === "Stable Diffusion") { 
+        pic1.src = AI["stable diffusion"].pic;
+        name1.innerHTML ="Name: "+AI["stable diffusion"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["stable diffusion"].publisher;
+        work1.innerHTML = "Type: "+AI["stable diffusion"].work;
+        platforms1.innerHTML = "Platforms: "+AI["stable diffusion"].platforms;
+        price1.innerHTML = "Price: "+AI["stable diffusion"].price;
+    }
+    else  if (option1.value === "DALL·E") { 
+        pic1.src = AI["DALL·E 3"].pic;
+        name1.innerHTML ="Name: "+AI["DALL·E 3"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["DALL·E 3"].publisher;
+        work1.innerHTML = "Type: "+AI["DALL·E 3"].work;
+        platforms1.innerHTML = "Platforms: "+AI["DALL·E 3"].platforms;
+        price1.innerHTML = "Price: "+AI["DALL·E 3"].price;
+    }
+    else  if (option1.value === "Canva AI") { 
+        pic1.src = AI["canva ai"].pic;
+        name1.innerHTML ="Name: "+AI["canva ai"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["canva ai"].publisher;
+        work1.innerHTML = "Type: "+AI["canva ai"].work;
+        platforms1.innerHTML = "Platforms: "+AI["canva ai"].platforms;
+        price1.innerHTML = "Price: "+AI["canva ai"].price;
+    }
+    else  if (option1.value === "Cursor") { 
+        pic1.src = AI["cursor ai"].pic;
+        name1.innerHTML ="Name: "+AI["cursor ai"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["cursor ai"].publisher;
+        work1.innerHTML = "Type: "+AI["cursor ai"].work;
+        platforms1.innerHTML = "Platforms: "+AI["cursor ai"].platforms;
+        price1.innerHTML = "Price: "+AI["cursor ai"].price;
+    }
+    else  if (option1.value === "Runway") { 
+        pic1.src = AI["runway ai"].pic;
+        name1.innerHTML ="Name: "+AI["runway ai"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["runway ai"].publisher;
+        work1.innerHTML = "Type: "+AI["runway ai"].work;
+        platforms1.innerHTML = "Platforms: "+AI["runway ai"].platforms;
+        price1.innerHTML = "Price: "+AI["runway ai"].price;
+    }
+    else  if (option1.value === "GitHub Copilot") { 
+        pic1.src = AI["github copilot"].pic;
+        name1.innerHTML ="Name: "+AI["github copilot"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["github copilot"].publisher;
+        work1.innerHTML = "Type: "+AI["github copilot"].work;
+        platforms1.innerHTML = "Platforms: "+AI["github copilot"].platforms;
+        price1.innerHTML = "Price: "+AI["github copilot"].price;
+    }
+    else  if (option1.value === "Grammarly") { 
+        pic1.src = AI["grammarly ai"].pic;
+        name1.innerHTML ="Name: "+AI["grammarly ai"].namey;
+        parent1.innerHTML = "Parent CO: "+AI["grammarly ai"].publisher;
+        work1.innerHTML = "Type: "+AI["grammarly ai"].work;
+        platforms1.innerHTML = "Platforms: "+AI["grammarly ai"].platforms;
+        price1.innerHTML = "Price: "+AI["grammarly ai"].price;
+    }
+
+
+
+
+
+
+
+    if (option2.value === "Chatgpt") { 
+        pic2.src = AI["chatgpt"].pic;
+        name2.innerHTML ="Name: "+AI["chatgpt"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["chatgpt"].publisher;
+        work2.innerHTML = "Type: "+AI["chatgpt"].work;
+        platforms2.innerHTML = "Platforms: "+AI["chatgpt"].platforms;
+        price2.innerHTML = "Price: "+AI["chatgpt"].price;
+    } 
+     else  if (option2.value === "Claude") { 
+        pic2.src = AI["claude"].pic;
+        name2.innerHTML ="Name: "+AI["claude"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["claude"].publisher;
+        work2.innerHTML = "Type: "+AI["claude"].work;
+        platforms2.innerHTML = "Platforms: "+AI["claude"].platforms;
+        price2.innerHTML = "Price: "+AI["claude"].price;
+    }
+    else  if (option2.value === "Perplexity") { 
+        pic2.src = AI["perplexity"].pic;
+        name2.innerHTML ="Name: "+AI["perplexity"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["perplexity"].publisher;
+        work2.innerHTML = "Type: "+AI["perplexity"].work;
+        platforms2.innerHTML = "Platforms: "+AI["perplexity"].platforms;
+        price2.innerHTML = "Price: "+AI["perplexity"].price;
+    }
+    else  if (option2.value === "Gemini") { 
+        pic2.src = AI["gemini"].pic;
+        name2.innerHTML ="Name: "+AI["gemini"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["gemini"].publisher;
+        work2.innerHTML = "Type: "+AI["gemini"].work;
+        platforms2.innerHTML = "Platforms: "+AI["gemini"].platforms;
+        price2.innerHTML = "Price: "+AI["gemini"].price;
+    }
+    else  if (option2.value === "Mid Journey") { 
+        pic2.src = AI["midjourney"].pic;
+        name2.innerHTML ="Name: "+AI["midjourney"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["midjourney"].publisher;
+        work2.innerHTML = "Type: "+AI["midjourney"].work;
+        platforms2.innerHTML = "Platforms: "+AI["midjourney"].platforms;
+        price2.innerHTML = "Price: "+AI["midjourney"].price;
+    }
+    else  if (option2.value === "Stable Diffusion") { 
+        pic2.src = AI["stable diffusion"].pic;
+        name2.innerHTML ="Name: "+AI["stable diffusion"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["stable diffusion"].publisher;
+        work2.innerHTML = "Type: "+AI["stable diffusion"].work;
+        platforms2.innerHTML = "Platforms: "+AI["stable diffusion"].platforms;
+        price2.innerHTML = "Price: "+AI["stable diffusion"].price;
+    }
+    else  if (option2.value === "DALL·E") { 
+        pic2.src = AI["DALL·E 3"].pic;
+        name2.innerHTML ="Name: "+AI["DALL·E 3"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["DALL·E 3"].publisher;
+        work2.innerHTML = "Type: "+AI["DALL·E 3"].work;
+        platforms2.innerHTML = "Platforms: "+AI["DALL·E 3"].platforms;
+        price2.innerHTML = "Price: "+AI["DALL·E 3"].price;
+    }
+    else  if (option2.value === "Canva AI") { 
+        pic2.src = AI["canva ai"].pic;
+        name2.innerHTML ="Name: "+AI["canva ai"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["canva ai"].publisher;
+        work2.innerHTML = "Type: "+AI["canva ai"].work;
+        platforms2.innerHTML = "Platforms: "+AI["canva ai"].platforms;
+        price2.innerHTML = "Price: "+AI["canva ai"].price;
+    }
+    else  if (option2.value === "Cursor") { 
+        pic2.src = AI["cursor ai"].pic;
+        name2.innerHTML ="Name: "+AI["cursor ai"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["cursor ai"].publisher;
+        work2.innerHTML = "Type: "+AI["cursor ai"].work;
+        platforms2.innerHTML = "Platforms: "+AI["cursor ai"].platforms;
+        price2.innerHTML = "Price: "+AI["cursor ai"].price;
+    }
+    else  if (option2.value === "Runway") { 
+        pic2.src = AI["runway ai"].pic;
+        name2.innerHTML ="Name: "+AI["runway ai"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["runway ai"].publisher;
+        work2.innerHTML = "Type: "+AI["runway ai"].work;
+        platforms2.innerHTML = "Platforms: "+AI["runway ai"].platforms;
+        price2.innerHTML = "Price: "+AI["runway ai"].price;
+    }
+    else  if (option2.value === "GitHub Copilot") { 
+        pic2.src = AI["github copilot"].pic;
+        name2.innerHTML ="Name: "+AI["github copilot"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["github copilot"].publisher;
+        work2.innerHTML = "Type: "+AI["github copilot"].work;
+        platforms2.innerHTML = "Platforms: "+AI["github copilot"].platforms;
+        price2.innerHTML = "Price: "+AI["github copilot"].price;
+    }
+    else  if (option2.value === "Grammarly") { 
+        pic2.src = AI["grammarly ai"].pic;
+        name2.innerHTML ="Name: "+AI["grammarly ai"].namey;
+        parent2.innerHTML = "Parent CO: "+AI["grammarly ai"].publisher;
+        work2.innerHTML = "Type: "+AI["grammarly ai"].work;
+        platforms2.innerHTML = "Platforms: "+AI["grammarly ai"].platforms;
+        price2.innerHTML = "Price: "+AI["grammarly ai"].price;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})

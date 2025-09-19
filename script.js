@@ -681,7 +681,7 @@ let AI = {
         publisher:"META",
         work:"Chat Bot",
         platforms:"Web, Desktop, Mobile, API",
-        price:"Free & Pro (via Google One AI Premium $20/mo)",
+        price:"Free & Pro <br>(via Google One AI Premium $20/mo)",
     },
     "midjourney":{
         pic:"icons8-midjourney-480.png",

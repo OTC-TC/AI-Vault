@@ -438,7 +438,9 @@ ul{
     flex-direction: row;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
  }
 
 
@@ -451,6 +453,7 @@ ul{
     text-align: center;
     align-items: center;
     display: none;
+    overflow-y: auto;
  }
 
 
@@ -543,6 +546,20 @@ ul{
         width: 30vw;
     }
 
+    /* Compare section: two-up layout on tablets/desktops */
+    .comp{
+        justify-content: center;
+        gap: 16px;
+    }
+    #com1,#com2{
+        width: 45%;
+        height: auto;
+        max-height: 70vh;
+    }
+    #com1 img,#com2 img{
+        width: 30%;
+    }
+
     #mcontent {
         width: 100%;
         margin: 8px;
@@ -603,11 +620,19 @@ ul{
         margin: 30px 0;
     }
 
+    .comparison select{
+        width: 90vw;
+        max-width: 600px;
+        font-size: 18px;
+        padding: 10px 12px;
+        margin: 8px 0;
+    }
     .comparison button{
-        width: 70vw;
+        width: 90vw;
+        max-width: 600px;
         height: 52px;
         font-size: 20px;
-        margin: 30px 0;
+        margin: 16px 0 30px 0;
     }
 
     .show h1 {
@@ -665,6 +690,28 @@ ul{
     #tools {
         margin: 20px 12px;
         gap: 12px;
+    }
+    /* Compare section: stack cards on mobile */
+    .comp{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 16px;
+        width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+    #com1,#com2{
+        width: 100%;
+        margin: 0;
+        height: auto;
+        max-height: none;
+        display: none;
+        padding-bottom: 12px;
+    }
+    #com1 img,#com2 img{
+        width: 40%;
+        max-width: 220px;
     }
 
     #chatgpt,#claude,#perplexity,#gemini,
@@ -725,17 +772,16 @@ ul{
 
 
 
+    /* Override older compare rules for very small phones */
     #com1,#com2{
-        margin: 20px;
-        width: 40vw;
-        height: 70vh;
-        background-color: #2f1d1d;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: auto;
         display: none;
-        
-     }
+    }
+    #com1 img,#com2 img{
+        width: 50%;
+    }
 
 
 
